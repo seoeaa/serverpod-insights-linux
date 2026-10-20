@@ -1,0 +1,36 @@
+# Publish only the application source and files needed to build it.
+# New root-level directories stay private unless explicitly allowed here.
+/*
+!/.gitignore
+!/.metadata
+!/README.md
+!/analysis_options.yaml
+!/pubspec.yaml
+!/pubspec.lock
+!/lib/
+!/linux/
+
+# Generated Flutter/Linux output and machine-local plugin symlinks.
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+/linux/flutter/ephemeral/
+
+# Credentials, local state and editor files are never source code.
+**/.env
+**/.env.*
+**/passwords.yaml
+**/passwords.*.yaml
+**/shared_preferences.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.iml
+*.ipr
+*.iws
+**/.idea/
+**/.vscode/
+.DS_Store
